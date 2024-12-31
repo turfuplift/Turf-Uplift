@@ -96,6 +96,9 @@
         .form-container button:hover {
             background: #2ecc71;
         }
+        iframe {
+            border: none;
+        }
         @media (max-width: 600px) {
             nav a {
                 display: block;
@@ -144,7 +147,7 @@
             <p><strong>Location:</strong> North Las Vegas, NV</p>
             <div class="form-container">
                 <h3>Request a Quote</h3>
-                <form>
+                <form action="https://formspree.io/f/xdkklwgy" method="POST">
                     <input type="text" name="name" placeholder="Your Name" required>
                     <input type="email" name="email" placeholder="Your Email" required>
                     <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
@@ -153,13 +156,7 @@
             </div>
             <div class="form-container">
                 <h3>Schedule an Appointment</h3>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <input type="date" name="date" required>
-                    <input type="time" name="time" required>
-                    <button type="submit">Book Appointment</button>
-                </form>
+                <iframe src="https://calendly.com/turfuplift" width="100%" height="600"></iframe>
             </div>
         </section>
     </div>
